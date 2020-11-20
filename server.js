@@ -27,7 +27,7 @@ mongoose.connection.once('open', () => {
 
 app.get('/', (req, res) => res.status(200).send('API activated'))
 
-app.post("/upload", (req, res) => {
+app.post("/sendEmail", (req, res) => {
     console.log(req)
 })
 
