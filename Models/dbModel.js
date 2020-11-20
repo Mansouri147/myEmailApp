@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
 
-const instance = mongoose.Schema ({
+const emailSchema = mongoose.Schema ({
     From: String,
     to: String,
     title: String,
     msgContent: String
 })
 
-export default mongoose.model('posts', instance)
+export default mongoose.model('emails', emailSchema)
