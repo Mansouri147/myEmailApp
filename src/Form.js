@@ -7,19 +7,20 @@ function Form() {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-      data = JSON.parse(data)
-    instance
-      .post("/SendingEmail", {
-        data,
-      })
-      .then(
-        (response) => {
-          console.log(response);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+    //   data = JSON.parse(data)
+    // instance
+    //   .post("/SendingEmail", {
+    //     data,
+    //   })
+    //   .then(
+    //     (response) => {
+    //       console.log(response);
+    //     },
+    //     (error) => {
+    //       console.log(error);
+    //     }
+    //   );
+    console.log(data)
   };
 
   return (
